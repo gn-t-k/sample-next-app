@@ -1,0 +1,31 @@
+import { ReactNode } from "react";
+import styles from "./index.module.css";
+
+type DOMProps = {
+  children: ReactNode;
+  variant:
+    | "h1"
+    | "h2"
+    | "h3"
+    | "h4"
+    | "h5"
+    | "h6"
+    | "subtitle1"
+    | "subtitle2"
+    | "body1"
+    | "body2";
+};
+
+export const DOM = ({ children, variant = "body1" }: DOMProps): JSX.Element => (
+  <div>
+    <span className={styles[variant]}>{children}</span>
+  </div>
+);
+
+type Props = {} & DOMProps;
+
+const Typography = (props: Props): JSX.Element => {
+  return <DOM {...props} />;
+};
+
+export default Typography;

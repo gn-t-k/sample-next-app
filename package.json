@@ -9,7 +9,8 @@
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "postinstall": "npx typesync"
+    "scaffold:presenter": "yarn run scaffdog generate presenter",
+    "postinstall": "yarn run typesync"
   },
   "dependencies": {
     "ky": "^0.28.7",
