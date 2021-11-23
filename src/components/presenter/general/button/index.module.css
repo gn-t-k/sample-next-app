@@ -1,0 +1,41 @@
+.default {
+  color: black;
+}
+
+.primary {
+  color: white;
+  background-color: blue;
+}
+
+.secondary {
+  color: black;
+  background-color: lightblue;
+}
+
+.danger {
+  color: white;
+  background-color: red;
+}
+
+.large {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.medium {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.small {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.disabled {
+  color: gray;
+}
